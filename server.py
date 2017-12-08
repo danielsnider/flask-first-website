@@ -8,4 +8,7 @@ def hello():
     return f.read()
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
+
+    app.url_for('static', filename='style.css')
+    app.url_for('static', filename='favicon.png')
